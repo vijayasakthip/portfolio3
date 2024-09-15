@@ -21,6 +21,30 @@
         .contact-info p {
             margin-bottom: 0;
         }
+        #submit:hover{
+            background-color: #25d366;
+        }
+        .contact-info p {
+            display: inline-block;
+            margin: 0;
+            transition: color 0.3s ease;
+        }
+        .contact-info a {
+            color: inherit; /* Use the color of the parent element */
+            text-decoration: none; /* Remove underline */
+        }
+        .contact-info .fa-envelope:hover {
+            color: #007bff; /* Blue for email */
+        }
+        .contact-info .fa-phone:hover {
+            color: #25D366; /* WhatsApp green */
+        }
+        .contact-info .fa-linkedin:hover {
+            color: #0A66C2; /* LinkedIn blue */
+        }
+        .contact-info i {
+            transition: color 0.3s ease;
+        }
     </style>
 </head>
 <body>
@@ -45,7 +69,7 @@
                 <label for="message" class="form-label">Your Message:</label>
                 <textarea name="message" id="message" class="form-control" placeholder="Your message" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn btn-light">Submit</button>
+            <button type="submit" class="btn btn-light "id="submit">Submit</button>
         </form>
         <hr>
         <div class="contact-info mt-4">
