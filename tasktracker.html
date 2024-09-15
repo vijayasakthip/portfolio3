@@ -61,10 +61,36 @@ button.remove {
     padding: 5px 10px;
     cursor: pointer;
 }
+ /* Go back button styling */
+ .back-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #f8f9fa;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            color: black;
+            transition: background-color 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .back-btn img {
+            margin-right: 10px; /* Adds space between the image and text */
+        }
+
+        .back-btn:hover {
+            background-color: lightgray;
+        }
+
 </style>
 </head>
 <body>
     <div class="container">
+        <a href="project.html" class="back-btn">
+            <img width="25" height="25" src="https://img.icons8.com/ios/50/circled-left--v1.png" alt="Go back icon"/> Go back
+        </a>
         <h1>Personal Task Tracker</h1>
         <form id="taskForm">
             <input type="text" id="taskInput" placeholder="Enter a task" required>
