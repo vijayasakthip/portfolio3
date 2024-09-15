@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll and Dice Game</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .container {
+            text-align: center;
+        }
+        
+        .dice-container {
+            margin: 20px 0;
+        }
+        
+        .dice-container img {
+            width: 100px;
+            height: 100px;
+            margin: 0 10px;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Roll and Dice Game</h1>
+        <div class="dice-container">
+            <img id="dice1" src="dice1.png" alt="Dice 1">
+            <img id="dice2" src="dice1.png" alt="Dice 2">
+        </div>
+        <button id="rollButton">Roll Dice</button>
+        <p id="result"></p>
+    </div>
+   
+</body>
+<script>
+    document.getElementById('rollButton').addEventListener('click', rollDice);
+
+function rollDice() {
+    // Random numbers for the dice
+    const dice1Value = Math.floor(Math.random() * 6) + 1;
+    const dice2Value = Math.floor(Math.random() * 6) + 1;
+
+    // Set dice images based on roll
+    document.getElementById('dice1').src = `dice${dice1Value}.png`;
+    document.getElementById('dice2').src = `dice${dice2Value}.png`;
+
+    // Show result
+    document.getElementById('result').textContent = `You rolled a ${dice1Value} and ${dice2Value}.`;
+}
+
+</script>
+</html>
