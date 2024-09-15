@@ -58,10 +58,14 @@
             padding: 5px;
             padding-right: 60px;
         }
-        .nav-item{
-            padding-right: 10px;
-            text-align: center;
+        @media(max-width:1024px){
+            .navbar-collapse{
+                
+                
+                padding-right: 0px;
+            }
         }
+      
         .button {
             border-radius: 50%;
             font-size: 25px;
