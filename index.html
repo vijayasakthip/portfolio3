@@ -29,40 +29,56 @@
             height: auto;
             display: block;
         }
+        /* Padding for nav-items when screen width is 1024px or larger */
+        @media (min-width: 1024px) {
+            .navbar-nav .nav-item {
+                padding: 0 10px; /* Adjust padding as needed */
+            }
+        }
+        
+        /* Center-align nav-items when screen width is smaller than 1024px */
+        @media (max-width: 1024px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            .navbar-nav .nav-item {
+                padding: 0; /* Remove padding for smaller screens */
+            }
+        }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Vijayasakthi P</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="aboutme.html">About me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="skills.html">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="project.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact me</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#">Vijayasakthi P</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutme.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact me</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
       
     <div class="container">
         <div class="row">
             <div class="col-lg-6 column1">
                 <h1>Hi, I'm</h1>
                 <h1>Vijayasakthi P</h1>
-                <h4>Front End Developer</h4>
+                <h4>Web Developer</h4>
                 <a href="Vijayasakthi P.pdf">
                 <button class="btn btn-light resume">
                     <p>Resume <i class="fa-solid fa-file-pdf"></i></p>
@@ -76,7 +92,7 @@
             </div>
             <div class="col-lg-6 column2">
                 <img src="vijayasakthi (1).png" alt="Your Image" class="mx-auto" style="width: 400px;height: 450px;">
-                <p>Front-End Developer looking for an opportunity in Web Development, with a strong focus on creating immersive and engaging user experiences through efficient and responsive website design and development. Proficient in modern web technologies to deliver seamless and visually appealing interfaces.</p>
+                <p>Web Developer looking for an opportunity in Web Development, with a strong focus on creating immersive and engaging user experiences through efficient and responsive website design and development. Proficient in modern web technologies to deliver seamless and visually appealing interfaces.</p>
             </div>
         </div>
 
