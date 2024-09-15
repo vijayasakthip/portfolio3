@@ -1,0 +1,81 @@
+
+        body {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        .column1 {
+            padding: 20px;
+            margin-top: 10%;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+
+        .column2 img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 10%;
+        }
+
+        .column2 p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        .hireme {
+            width: 300px;
+            margin: 0 auto;
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            
+            
+        }
+
+        /* Responsive margin adjustments */
+        @media (max-width: 768px) {
+            .column1, .column2 img {
+                margin-top: 5%;
+            }
+        }
+     
+        .navbar-collapse{
+            justify-content: end;
+            padding: 5px;
+            padding-right: 60px;
+        }
+        .nav-item{
+            padding-right: 10px;
+            text-align: center;
+        }
+        .button {
+            border-radius: 50%;
+            font-size: 25px;
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+        }
+        
+        .o {
+            color: orange;
+        }
+        
+        #equal {
+            background-color: orange;
+            color: white;
+        }
+       
